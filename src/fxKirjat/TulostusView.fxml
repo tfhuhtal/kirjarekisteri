@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="497.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxKirjat.TulostusController" >
+     <bottom> 
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button mnemonicParsing="false" onAction="#handleTulosta" text="Tulosta" />
+        </items>
+      </ToolBar>
+   </bottom>
+   <top>
+      <TitledPane animated="false" prefHeight="0.0" prefWidth="600.0" text="Kirjat" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
+   </top>
+   <center>
+      <TextArea fx:id="tulostusAlue" prefHeight="200.0" prefWidth="200.0" text="Tennisesseet&#10;David Foster Wallace&#10;2012&#10;essee&#10;158&#10;______________&#10;&#10;&#10;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
